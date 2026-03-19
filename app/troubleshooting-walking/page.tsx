@@ -6,6 +6,8 @@
 import Image from "next/image";
 
 export default function TroubleshootingWalkingPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main className="min-h-screen px-4 py-10 print:py-0">
       <div className="max-w-[820px] mx-auto">
@@ -35,7 +37,7 @@ export default function TroubleshootingWalkingPage() {
               </ul>
               <div className="mt-3 border border-[var(--color-border)] rounded-md bg-white overflow-hidden">
                 <Image
-                  src="/assets/images/create_auto_scaling.png"
+                  src={`${basePath}/assets/images/create_auto_scaling.png`}
                   alt="ELB 헬스체크 실패 및 인스턴스 교체 로그"
                   width={1024}
                   height={200}
