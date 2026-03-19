@@ -8,7 +8,7 @@ import type { CareerDescriptionData } from "@/types/career";
 export const sampleCareerData: CareerDescriptionData = {
   contact: {
     name: "임지은",
-    email: "ije90@gmail.com",
+    email: "ije90.work@gmail.com",
     phone: "010-0000-0000",
     github: "https://github.com/ije90s",
     linkedIn: "",
