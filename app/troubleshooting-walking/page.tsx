@@ -35,14 +35,6 @@ export default function TroubleshootingWalkingPage() {
                 <li>만보기 데이터가 일부 사용자에게 반영되지 않는 장애 발생</li>
                 <li>초기에는 급격한 트래픽 증가로 인한 서버 과부하 및 응답 지연으로 판단</li>
               </ul>
-              <div className="mt-3 border border-[var(--color-border)] rounded-md bg-white overflow-hidden">
-                <Image
-                  src={`${basePath}/assets/images/create_auto_scaling.png`}
-                  alt="ELB 헬스체크 실패 및 인스턴스 교체 로그"
-                  width={1024}
-                  height={200}
-                />
-              </div>
             </section>
 
             <section>
