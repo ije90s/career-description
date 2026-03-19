@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 제출용 PDF 느낌의 밝은 톤으로 고정 */
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-ink: #111827;
+  --color-muted: #4b5563;
+  --color-accent: #2563eb;
+  --color-border: #d1d5db;
+  --color-page-bg: #f3f4f6; /* 화면에서 종이 바깥 배경 */
+}
+
+body {
+  background-color: var(--color-page-bg);
+  color: var(--color-ink);
+}
+
+/* 인쇄 시 배경/색상 유지 */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  body {
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+}
